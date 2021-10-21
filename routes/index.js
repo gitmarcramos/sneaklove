@@ -9,14 +9,30 @@ const router = express.Router();
 // -----------------------------\n\n`
 // );
 
-router.get("/", (req, res) => {
-  res.send("foo");
+
+// GET route, index
+router.get(["/", "/index"], async (req, res) => {
+  try {
+    res.render("index.hbs");
+  } catch (err) {
+    console.log(e, "Index GET error")
+  }
 });
 
-router.get("/sneakers/:cat", (req, res) => {
-  res.send("bar");
+// GET route, Sneakers
+router.get('/sneakers', async (req, res) => {
+  try {
+    res.render('')
+  } catch(err) {
+    console.log(e, "Sneakers route error")
+  }
 });
 
+// router.get("/sneakers/:cat", (req, res) => {
+//   res.send("bar");
+// });
+
+// GET route, 
 router.get("/one-product/:id", (req, res) => {
   res.send("baz");
 });
@@ -28,6 +44,5 @@ router.get("/signup", (req, res) => {
 router.get("/signin", (req, res) => {
   res.send("love");
 });
-
 
 module.exports = router;
