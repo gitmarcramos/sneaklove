@@ -10,7 +10,8 @@ const sneakerSchema = new Schema({
   id_tags: {
     type: Schema.Types.ObjectId,
     ref: "sneakers"
-  }
+  },
+  image: { type: String, default: "https://mir-s3-cdn-cf.behance.net/project_modules/1400/2806d478350973.5ca28ba9c3f64.jpg"}
 });
 
 const sneakerModel = model("sneakers", sneakerSchema);
