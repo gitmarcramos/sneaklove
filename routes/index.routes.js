@@ -19,14 +19,7 @@ router.get(["/", "/index"], async (req, res) => {
   }
 });
 
-// GET route, Sneakers
-router.get('/sneakers', async (req, res) => {
-  try {
-    res.render('')
-  } catch(err) {
-    console.log(e, "Sneakers route error")
-  }
-});
+
 
 // router.get("/sneakers/:cat", (req, res) => {
 //   res.send("bar");
@@ -37,12 +30,12 @@ router.get("/one-product/:id", (req, res) => {
   res.send("baz");
 });
 
-router.get("/signup", (req, res) => {
-  res.send("sneak");
-});
+// router.get("/signup", (req, res) => {
+//   res.send("sneak");
+// });
 
-router.get("/signin", (req, res) => {
-  res.send("love");
-});
+// router.get("/signin", (req, res) => {
+//   res.send("love");
+// });
 
 module.exports = router;

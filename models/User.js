@@ -7,6 +7,7 @@ const userSchema = new Schema({
   password: String
 });
 
+
 console.log("coucou");
 const userModel = model("users", userSchema);
 

@@ -57,7 +57,9 @@ app.use(require("./middlewares/exposeLoginStatus")); // expose le status de conn
 app.use(require("./middlewares/exposeFlashMessage")); // affiche les messages dans le template
 
 // routers
-app.use("/", require("./routes/index"));
+app.use("/", require("./routes/index.routes"));
+app.use("/sneakers", require("./routes/sneakers.routes"));
+app.use("/", require("./routes/auth.routes"));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
