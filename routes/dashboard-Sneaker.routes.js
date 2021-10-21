@@ -1,7 +1,9 @@
 const express = require("express"); // import express in this module
 const router = express.Router(); // create an app sub-module (router)
 const sneakerSchema = require("./../models/Sneaker");
+const protectPrivateRoute = require("../middlewares/protectPrivateRoute")
 
+router.use(protectPrivateRoute);
 //GET dashboard view
 router.get("/", (req, res) => {
   try {
