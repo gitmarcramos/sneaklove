@@ -30,6 +30,15 @@ h3.manage-products-title {
   width: 25%;
 }
 
+.image-division {
+  object-fit: contain;
+}
+
+.image-division img {
+  width: 100%;
+  margin: -1rem;
+}
+
 .table-head {
   width: 25%;
   border: 1px solid;
