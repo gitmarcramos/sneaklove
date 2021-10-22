@@ -60,3 +60,12 @@ h3.manage-products-title {
   padding: 1rem;
   text-align: center;
 }
+
+
+.button-add {
+  display: flex;
+  max-width: 150px;
+  margin-bottom: 16px;
+  justify-content: center;
+}
+
